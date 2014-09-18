@@ -12,15 +12,6 @@ public class TestFactory {
     return lead;
   }
 
-  public static Account createAccount(KMAccount__c kmaccount) {
-    Account account = new Account(
-      Name = 'Test Account',
-      Business_Type__c = 'SaaS'
-    );
-    insert account;
-    return account;
-  }
-
   public static Opportunity createOpportunity(Account account) {
     Opportunity oppty = new Opportunity(
       Name = 'Test Opportunity',
