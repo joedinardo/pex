@@ -1,7 +1,6 @@
 @isTest
 public class KMTrackingLeadTest {
   @isTest static void createOneLead(){
-    TestFactory.createKMTrackingSettings();
     Lead lead = TestFactory.createLead();
     System.assertEquals(lead.IsDeleted, false);
   }
